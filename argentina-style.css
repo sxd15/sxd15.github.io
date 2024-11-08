@@ -1,0 +1,101 @@
+/* Font Setup */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: hsl(0, 0%, 20%);
+    line-height: 1.6;
+    max-width: 60ch; /* limit to 60 characters */
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+
+nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #f8f9fa;
+    background-color: hsl(210, 50%, 50%);
+    border-radius: 5px;
+}
+
+nav a:visited {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+nav a:active {
+    color: #ffcccc;
+}
+
+/* Main Content */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(51, 102, 204);
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: hsl(210, 20%, 30%);
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Links */
+a {
+    color: hsl(210, 50%, 50%);
+}
+
+a:hover {
+    color: rgb(51, 102, 204);
+}
+
+a:visited {
+    color: rgba(100, 100, 100, 0.8);
+}
+
+a:active {
+    color: hsl(0, 50%, 50%);
+}
