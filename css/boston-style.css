@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&family=Playfair+Display:wght@400;900&display=swap');
+
+body {
+    font-family: 'Playfair Display', 'EB Garamond', sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#cityintro {
+    grid-column: 1 / -1;
+    background-color: #e6e6e6;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cityintro h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+#cityintro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+body#the-city {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    grid-template-areas:
+        "cityintro cityintro"
+        "northend   fenway"
+        "backbay    backbay";
+}
+
+#cityintro {
+    grid-area: cityintro;
+}
+
+#northend {
+    grid-area: northend;
+}
+
+#fenway {
+    grid-area: fenway;
+}
+
+#backbay {
+    grid-area: backbay;
+    grid-column: 1 / -1;
+}
+
+footer {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    color: #555;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: rgba(0, 109, 255, 0.74);
+    background-color: rgba(0, 0, 0, 0.18);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:link {
+    color: rgba(6, 6, 141, 1);
+
+}
+
+nav a:hover {
+    color: rgba(0, 93, 153, 1); 
+    background-color: #333;
+    color: #fff;
+}
+
+nav a:visited {
+    color: rgba(255, 0, 0, 0.74);
+}
+
+nav a:active {
+    color: rgba(249, 3, 200, 0.869);
+}
+
+#menu {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#menu h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+header,
+nav,
+footer {
+    background-color: #eee;
+    padding: 20px;
+    grid-column: 1 / -1;
+}
+
+section {
+    background-color: #ddd;
+    padding: 20px;
+}
+
+section p {
+    margin-bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+} 
+
+body#beaches {
+    grid-template-areas:
+        "beaches-intro beaches-intro"
+        "capecod         capecod"
+        "northshore      northshore";
+}
+
+#beaches-intro {
+    grid-area: beaches-intro;
+    grid-column: 1 / -1;
+}
+
+#capecod {
+    grid-area: capecod;
+    grid-column: 1 / -1;
+}
+
+#northshore {
+    grid-area: northshore;
+    grid-column: 1 / -1;
+}
+
+#beaches article {
+    background-color: #ccc;
+    padding: 15px;
+    margin-top: 10px;
+}
